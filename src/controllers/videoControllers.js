@@ -44,6 +44,7 @@ export const videoWatch = (req, res) => {
 export const videoChange = (req, res) => {
 	const { id } = req.params;
 	const { title } = req.body;
+	console.log(req.body.title);
 	videos[id - 1].title = title;
 	return res.redirect(`/videos/${id}`);
 };
