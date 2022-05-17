@@ -3,6 +3,7 @@ include mixins/video
 
 block content
      ul 
+        a(class='button' href='/videos/upload') Upload
         each potato in videos 
             +video(potato)    
         else 
